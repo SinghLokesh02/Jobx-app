@@ -1,0 +1,12 @@
+.rotate-image {
+    transform: rotateY(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+.box-shadow {
+    transition: box-shadow 1s ease; /* Transition the box-shadow property over 1 second */
+  }
+  
+  .box-shadow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add the box shadow on hover */
+  }
