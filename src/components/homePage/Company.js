@@ -19,7 +19,7 @@ const Company = () => {
           <div className="overflow-x-auto whitespace-nowrap flex py-5 gap-[20px] my-5">
         {
           companyname.map((name, index) => (
-            <CompanyCard key={index} role={name} />
+            <CompanyCard key={index} name={name} />
           ))
         }
       </div>

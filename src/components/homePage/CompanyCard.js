@@ -10,8 +10,8 @@ const CompanyCard = (props) => {
                     <img src={COMPANY_IMG} alt={name} className='h-[100px] m-auto' />
                 </div>
             </div>
-            <div className="info mt-3 px-3">
-                <h1 className='text-2xl font-bold my-2 text-center'>{name}</h1>
+            <div className="info m-2 px-3">
+                <h1 className='text-2xl font-bold my-2 text-center text-red-600 font-mono'>{name}</h1>
                 <p className='text-center text-orange-600'>Link to Apply</p>
                 <p className='my-5'></p>
             </div>
