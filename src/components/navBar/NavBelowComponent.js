@@ -14,14 +14,14 @@ export default function NavBelowComponents() {
     <div className='bg-orange-500'>
        
       <FormControl sx={{ minWidth: 240 }} className='flex justify-center align-middle w-full'>
-      <div className='flex justify-center md:gap-12 w-full md:p-3 flex-col md:flex-row py-2 align-middle gap-3'>
+      <div className='flex justify-center md:gap-5 w-full md:p-3 flex-col md:flex-row py-2 align-middle gap-3'>
       <div className='m-auto'>
        <Select
           value={age}
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
-          className='w-[300px] bg-white'
+          className='w-[200px] bg-white'
         >
           <MenuItem value="">
            <em>Search Jobs</em>
@@ -38,7 +38,7 @@ export default function NavBelowComponents() {
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
-          className='w-[300px] bg-white'
+          className='w-[200px] bg-white'
         >
           <MenuItem value="">
             <em>Search Locations</em>
@@ -55,7 +55,7 @@ export default function NavBelowComponents() {
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
-          className='w-[300px] bg-white'
+          className='w-[200px] bg-white'
         >
           <MenuItem value="">
             <em>Search Category</em>

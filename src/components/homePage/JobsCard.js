@@ -5,12 +5,12 @@ const JobsCard = (props) => {
   const { role } = props;
 
   return (
-    <div className='container m-4 border-2 md:min-w-80 rounded-lg'>
+    <div className='container border-2 min-w-90 rounded-lg bg-white text-black my-5 shadow-2xl'>
       <div className="main flex g-10 w-[300px] justify-between p-3 md:flex-row sm:flex-col">
         <div className="box1">
           <img src={JOBS_IMG} alt='Some Error Occured' className='h-[100px] rounded-lg' />
         </div>
-        <div className="box2">
+        <div className="box2 px-5 md:px-0">
           <p>Payment not disclosed</p>
           <p className='bg-orange-500 text-center rounded-xl'>Full time/onsite</p>
         </div>

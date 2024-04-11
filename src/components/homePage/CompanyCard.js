@@ -4,7 +4,7 @@ import { COMPANY_IMG } from '../../utils/constant';
 const CompanyCard = (props) => {
     const { name } = props;
     return (
-        <div className='container m-3 border-2 min-w-80 rounded-lg'>
+        <div className='container border-2 rounded-lg bg-white my-8 shadow-2xl'>
             <div className="main g-10 justify-between p-3">
                 <div className="box1 m-auto">
                     <img src={COMPANY_IMG} alt={name} className='h-[100px] m-auto' />
