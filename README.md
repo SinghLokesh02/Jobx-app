@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 - This is a simple project to demonstrate the use of ReactJS with 
-- The Link to the project is [here]("https://dummy-react-frontend.vercel.app/")
+- The Link to the project is [Project Link](https://dummy-react-frontend.vercel.app/)
 - The project is hosted on Vercel
 
 ## How to run the project
