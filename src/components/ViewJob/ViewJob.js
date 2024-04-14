@@ -18,7 +18,7 @@ const ViewJob = () => {
       <div className="main-content md:flex my-5 mx-5 flex-wrap md:flex-row flex-col ">
         <div className="Job-description md:w-3/4 px-5 w-full">
           <div className="head flex justify-between align-middle">
-            <img src={MIRACLE} className="w-[100px]" alt="" />
+            <img src="./logo1.png" className="w-[100px]" alt="" />
             <p className="bg-orange-600 h-fit px-2 rounded-xl text-white">
               Full time/onsite
             </p>
