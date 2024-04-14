@@ -5,3 +5,5 @@ export const COMPANY_IMG = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9
 
 
 export const JOB_CATEGORIES = "https://www.jobxpro.in/storage/app/public/images/category/MUFIvu7IIgWfgNycP8SMy9baHpEE6ZOwDXcgEGM6.png";
+
+export const MIRACLE = "http://www.miracleitskills.com/logo1.png";

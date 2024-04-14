@@ -19,5 +19,6 @@
 - Responsive design
 - Implemented Routing
 - Implemented a simple form
+- Slider component
 
  
