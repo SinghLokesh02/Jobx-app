@@ -7,16 +7,16 @@ import { MIRACLE } from "../../utils/constant";
 
 const ViewJob = () => {
   return (
-    <>
+    <div className="bg-gray-200">
       <Navbar />
-      <div className="bg-gray-100">
+      <div>
         <div className="text bg-black text-white">
           <h1 className="p-5 text-center md:w-1/4  w-1/2">Home / Jobname</h1>
         </div>
       </div>
 
-      <div className="main-content md:flex my-5 mx-5 flex-wrap md:flex-row flex-col ">
-        <div className="Job-description md:w-3/4 px-5 w-full">
+      <div className="main-content md:flex my-5 mx-5 flex-wrap md:flex-row flex-col justify-center gap-5">
+        <div className="Job-description md:w-3/5 px-5 w-full bg-white border-2 pt-5 m-1">
           <div className="head flex justify-between align-middle">
             <img src="./logo1.png" className="w-[100px]" alt="" />
             <p className="bg-orange-600 h-fit px-2 rounded-xl text-white">
@@ -81,7 +81,7 @@ const ViewJob = () => {
             </p>
           </div>
         </div>
-        <div className="apply-description md:w-1/4 w-full">
+        <div className="apply-description md:w-1/4 w-full pt-2 md:m-0 my-5">
           <Link
             to={"/ApplyJob"}
             className="bg-orange-600 p-3 text-white font-bold block"
@@ -102,11 +102,19 @@ const ViewJob = () => {
             <h1 className="font-semibold">Post Data</h1>
             <p className="py-4">12Apr, 2024</p>
 
-            <div className="box border-2 flex justify-center align-middle hover:bg-orange-600 hover:text-white">
-              <button className="mr-4 font-semibold font-mono">
+            <div className="box border-2 flex justify-center bg-gray-100 align-middle hover:bg-orange-600 hover:text-white py-3">
+              <button className="mr-4 font-semibold font-mono ">
                 BOOKMARK
               </button>
               <i className="fa-solid fa-heart text-2xl lg:text-xl xl:text-2xl "></i>
+            </div>
+
+            <div className="logo flex gap-3 justify-center my-3">
+            <i className="fa-brands fa-whatsapp text-2xl bg-green-500 text-white px-1 rounded-md"></i>
+            <i className="fa-brands fa-facebook text-2xl bg-blue-500 px-1 rounded-md text-white"></i>
+            <i className="fa-brands fa-twitter text-2xl bg-blue-400 text-white px-1 rounded-md"></i>
+            <i className="fa-brands fa-linkedin text-2xl bg-blue-700 text-white px-1 rounded-md"></i>
+            <i className="fa-brands fa-telegram text-2xl text-white px-1 rounded-md bg-blue-600"></i>
             </div>
           </div>
         </div>
@@ -118,7 +126,7 @@ const ViewJob = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
