@@ -17,5 +17,7 @@
 - Use of React Hooks
 - Use of Tailwind CSS for styling
 - Responsive design
+- Implemented Routing
+- Implemented a simple form
 
  

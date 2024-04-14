@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { COMPANY_IMG } from '../../utils/constant';
+import ApplyJob from '../jobsection/ApplyJob';
 
 const CompanyCard = (props) => {
     const { name } = props;
     return (
-        <div className='container border-2 rounded-lg bg-white my-8 shadow-2xl'>
+        <div className='container border-2 rounded-lg bg-white my-8'>
             <div className="main g-10 justify-between p-3">
                 <div className="box1 m-auto">
                     <img src={COMPANY_IMG} alt={name} className='h-[100px] m-auto' />
@@ -16,7 +18,10 @@ const CompanyCard = (props) => {
                 <p className='my-5'></p>
             </div>
             <div className="flex flex-wrap border-t-2">
-                <button className='px-4 text-xl border-gray-400 hover:bg-orange-600 hover:text-white focus:outline-none p-3 rounded m-auto w-full'>Apply Now</button>
+                {/* Use Link to navigate to ApplyJob */}
+                <Link to="/ApplyJob" className='px-4 text-xl border-gray-400 hover:bg-orange-600 hover:text-white focus:outline-none p-3 rounded m-auto w-full'>
+                    Apply Now
+                </Link>
             </div>
         </div>
     );

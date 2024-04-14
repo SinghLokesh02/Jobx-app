@@ -10,9 +10,10 @@ const Company = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1024,
