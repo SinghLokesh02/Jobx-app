@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const companyname = ["Google", "Microsoft", "Amazon", "Facebook", "Apple", "IBM", "Oracle", "Cisco", "Intel", "HP"];
 const Company = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 3000,
     slidesToShow: 3,

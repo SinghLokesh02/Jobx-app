@@ -40,7 +40,7 @@ const ImageSlider = () => {
           ]
       };
   return (
-    <div className='container my-1 m-auto p-10'>
+    <div className='container my-1 m-auto px-10'>
         <Slider {...settings}>  
             {
                 places.map((place,index) => {

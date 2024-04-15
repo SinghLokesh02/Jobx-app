@@ -9,7 +9,7 @@ const jobrole = ["React Js Developer", "UI/UX Designer", "Digital Marketing", "W
  
 const Jobs = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,

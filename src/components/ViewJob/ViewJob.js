@@ -84,13 +84,13 @@ const ViewJob = () => {
         <div className="apply-description md:w-1/4 w-full pt-2 md:m-0 my-5">
           <Link
             to={"/ApplyJob"}
-            className="bg-orange-600 p-3 text-white font-bold block"
+            className="bg-orange-600 p-3 hover:bg-black text-white font-bold block"
           >
             {" "}
             APPLY NOW
           </Link>
 
-          <div className="info">
+          <div className="info bg-white">
             <h1 className="font-semibold">Views</h1>
             <p className="py-4">6</p>
             <h1 className="font-semibold">Applicants</h1>
@@ -109,7 +109,7 @@ const ViewJob = () => {
               <i className="fa-solid fa-heart text-2xl lg:text-xl xl:text-2xl "></i>
             </div>
 
-            <div className="logo flex gap-3 justify-center my-3">
+            <div className="logo flex gap-3 justify-center py-3">
             <i className="fa-brands fa-whatsapp text-2xl bg-green-500 text-white px-1 rounded-md"></i>
             <i className="fa-brands fa-facebook text-2xl bg-blue-500 px-1 rounded-md text-white"></i>
             <i className="fa-brands fa-twitter text-2xl bg-blue-400 text-white px-1 rounded-md"></i>

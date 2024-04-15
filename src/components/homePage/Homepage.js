@@ -7,6 +7,7 @@ import Offer from "./Offer";
 import Footer from "./Footer";
 import NavBelowComponents from "../navBar/NavBelowComponent";
 import ImageSlider from "../imageslider/ImageSlider";
+import SliderBelowComponent from "../imageslider/SliderBelowComponent";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Navbar />
       <NavBelowComponents />
       <ImageSlider />
+      <SliderBelowComponent />
       <Jobs />
       <Company />
       <Jobs />
