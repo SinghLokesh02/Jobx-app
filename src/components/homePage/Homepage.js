@@ -6,13 +6,14 @@ import JobCategory from "./JobCategory";
 import Offer from "./Offer";
 import Footer from "./Footer";
 import NavBelowComponents from "../navBar/NavBelowComponent";
-
+import ImageSlider from "../imageslider/ImageSlider";
 
 const Homepage = () => {
   return (
     <div>
       <Navbar />
       <NavBelowComponents />
+      <ImageSlider />
       <Jobs />
       <Company />
       <Jobs />

@@ -46,8 +46,8 @@ const Company = () => {
          <div className='container1  md:m-auto md:py-5 md:p-10 w-full p-2 md:w-4/5'>
           <div className="heading flex justify-between md:m-5 m-1">
             <div className="text w-2/3">
-            <h1 className='text-3xl font-bold'>Featured Comapnies</h1>
-            <p>Your Job for a Future</p>
+            <h1 className='text-3xl font-bold text-left'>Featured Comapnies</h1>
+            <p className='text-left'>Your Job for a Future</p>
             </div>
             <div className="btn w-1/3 flex">
                 <button className='bg-orange-500 text-white px-5 py-2 rounded-lg md:mr-10 m-auto'>View All</button>
