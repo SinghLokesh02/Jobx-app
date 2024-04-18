@@ -1,31 +1,88 @@
-import React from 'react'
-import MultiSelectDropdown from './MultiSelectDropdown';
+import React from "react";
+import { Select, Space } from "antd";
+const handleChange = (value) => {
+  console.log(`selected ${value}`);
+};
+const options = [
+  {
+    label: "C++",
+    value: "C++",
+  },
+  {
+    label: "Java",
+    value: "Java",
+  },
+  {
+    label: "Python",
+    value: "Python",
+  },
+  {
+    label: "JavaScript",
+    value: "JavaScript",
+  },
+  {
+    label: "React",
+    value: "React",
+  },
+  {
+    label: "Angular",
+    value: "Angular",
+  },
+  {
+    label: "Vue",
+    value: "Vue",
+  },
+  {
+    label: "Node",
+    value: "Node",
+  },
+  {
+    label: "Express",
+    value: "Express",
+  },
+  {
+    label: "MongoDB",
+    value: "MongoDB",
+  },
+  {
+    label: "SQL",
+    value: "SQL",
+  },
+  {
+    label: "Docker",
+    value: "Docker",
+  },
 
-function MultiDropdownItem() {
-  const options = [
-    { value: 'HTML', label: 'HTML' },
-    { value: 'CSS', label: 'CSS' },
-    { value: 'Javascript', label: 'Javascript' },
-    { value: 'C', label: 'C' },
-    { value: 'C++', label: 'C++' },
-    { value: 'React', label: 'React' },
-    { value: 'Python', label: 'Python' },
-    { value: 'NodeJs', label: 'NodeJs' },
-    { value: 'Tailwind CSS', label: 'Tailwind CSS' },
-  ];
-  const handleChange = (selectedValues) => {
-    console.log('Selected values:', selectedValues);
-  };
-  return (    
-   <div className='w-[70%]'>
-     <MultiSelectDropdown
-      options={options}
-      placeholder="Skills"
-      onChange={handleChange}
-    />
-   </div>
-    
-  )
-}
-
-export default MultiDropdownItem
+  {
+    label: "Git",
+    value: "Git",
+  },
+  {
+    label: "HTML",
+    value: "HTML",
+  },
+  {
+    label: "CSS",
+    value: "CSS",
+  },
+];
+const MultiDropdownItem = () => (
+  <Select
+    mode="multiple"
+    style={{
+      width: "80%",
+    }}
+    placeholder="Skills"
+    onChange={handleChange}
+    options={options}
+    optionRender={(option) => (
+      <Space>
+        <span role="img" aria-label={option.data.label}>
+          {option.data.value}
+        </span>
+        {option.data.desc}
+      </Space>
+    )}
+  />
+);
+export default MultiDropdownItem;
