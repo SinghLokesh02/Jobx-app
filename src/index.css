@@ -15,4 +15,5 @@
 button.slick-arrow::before{
     background: gray;
     border-radius: 50%;
+    /* position: absolute; */
 }

@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import ImageCard from './ImageCard';
 
 const ImageSlider = () => {
-    const places = ["Bhopal","Indore","Ujjain","Jabalpur","Ratlam","Gwalior"]
-    const images = ["computers","coding","building","programming","office","workplace"]
+    const places = ["Bhopal","Bengaluru","Kolkata","Jabalpur","Noida","Gwalior"]
+    const images = ["bhopal.png","Bengaluru.png","kolkata.png","jabalpur.png","noida.png","Gwalior.png"]
+    const numberOfJobs = [15,21,42,52,101,89]
     var settings = {
         dots: false,
         infinite: true,
@@ -45,7 +46,7 @@ const ImageSlider = () => {
             {
                 places.map((place,index) => {
                     return (
-                        <ImageCard key={index} locations={place} imagesrc={images[index]} />
+                        <ImageCard key={index} locations={place} imagesrc={images[index]} numberOfJobs={numberOfJobs[index]}/>
                     )
                 })
             }

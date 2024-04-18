@@ -6,7 +6,7 @@ import JobsCard from '../homePage/JobsCard';
 const jobrole = ["React Js Developer", "UI/UX Designer", "Digital Marketing", "Web developer", "Node Js Developer", "Content Writer"];
 const Morejobs = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,

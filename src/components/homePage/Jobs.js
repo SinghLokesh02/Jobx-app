@@ -16,8 +16,9 @@ const Jobs = () => {
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
+       
       {
-        breakpoint: 1024,
+        breakpoint: 1070,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -28,7 +29,7 @@ const Jobs = () => {
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
            
         }

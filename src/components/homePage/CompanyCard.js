@@ -19,7 +19,7 @@ const CompanyCard = (props) => {
             </div>
             <div className="flex flex-wrap border-t-2">
                 {/* Use Link to navigate to ApplyJob */}
-                <Link to="/ApplyJob" className='px-4 text-xl border-gray-400 hover:bg-orange-600 hover:text-white focus:outline-none p-3 rounded m-auto w-full'>
+                <Link to="/ApplyJob" className='px-4 text-xl border-gray-400 hover:bg-orange-600 hover:text-white focus:outline-none p-3 rounded m-auto w-full text-center'>
                     Apply Now
                 </Link>
             </div>

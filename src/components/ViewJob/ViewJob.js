@@ -3,7 +3,6 @@ import Navbar from "../navBar/Navbar";
 import Footer from "../homePage/Footer";
 import Morejobs from "./Morejobs";
 import { Link } from "react-router-dom";
-import { MIRACLE } from "../../utils/constant";
 
 const ViewJob = () => {
   return (
@@ -18,7 +17,7 @@ const ViewJob = () => {
       <div className="main-content md:flex my-5 mx-5 flex-wrap md:flex-row flex-col justify-center gap-5">
         <div className="Job-description md:w-3/5 px-5 w-full bg-white border-2 pt-5 m-1">
           <div className="head flex justify-between align-middle">
-            <img src="./logo1.png" className="w-[100px]" alt="" />
+            <img src={require('../../assets/logo1.png')} className="w-[100px]" alt="" />
             <p className="bg-orange-600 h-fit px-2 rounded-xl text-white">
               Full time/onsite
             </p>
@@ -84,13 +83,13 @@ const ViewJob = () => {
         <div className="apply-description md:w-1/4 w-full pt-2 md:m-0 my-5">
           <Link
             to={"/ApplyJob"}
-            className="bg-orange-600 p-3 hover:bg-black text-white font-bold block"
+            className="bg-orange-600 p-3 hover:bg-black text-center text-white font-bold block"
           >
             {" "}
             APPLY NOW
           </Link>
 
-          <div className="info bg-white">
+          <div className="info bg-white text-center">
             <h1 className="font-semibold">Views</h1>
             <p className="py-4">6</p>
             <h1 className="font-semibold">Applicants</h1>
@@ -121,7 +120,7 @@ const ViewJob = () => {
       </div>
 
       <div className="text">
-        <h1 className="m-2 text-3xl font-bold">Similar Jobs</h1>
+        <h1 className="m-2 text-3xl font-bold text-center">Similar Jobs</h1>
        <Morejobs />
       </div>
 
