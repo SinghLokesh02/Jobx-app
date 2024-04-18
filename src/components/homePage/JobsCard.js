@@ -25,7 +25,7 @@ const JobsCard = (props) => {
           </p>
         </div>
       </div>
-      <div className="info mt-3 px-3">
+      <div className="info m-3 px-3 my-7">
         <h1 className="text-2xl font-bold my-2">{role}</h1>
         <p>
           <i className="fa-solid fa-location-dot"></i> Bhopal
@@ -33,29 +33,25 @@ const JobsCard = (props) => {
         <p className="my-5">Immidiate Joiner</p>
       </div>
 
+      <div className="flex border-t-2">
+        <Link
+          to={"/ApplyJob"}
+          className="hover:bg-orange-600 w-[40%] text-center md:pt-3 pt-3 hover:text-white md:py-5 border-r-2 p-1"
+        >
+          APPLY NOW
+        </Link>
 
+        <Link
+          to={"ViewJob"}
+          className="focus:outline-none hover:bg-orange-600 w-[40%] text-center md:pt-3 pt-3 hover:text-white md:p-4 p-1 border-r-2"
+        >
+          VIEW JOB
+        </Link>
 
-      <div className="flex flex-wrap border-t-2">
-        <div className="w-full flex items-center">
-          <div className="border-r-2 h-full  hover:bg-orange-600 p-3 hover:text-white">
-            <Link
-              to={"/ApplyJob"}
-              className="md:px-4 px-2 border-gray-400 hover:bg-orange-600  focus:outline-none"
-            >
-              APPLY NOW
-            </Link>
+        <div className="w-[20%] m-auto flex justify-center p-1">
+          <div className="circular-box rounded-full border-2 hover:text-white hover:bg-orange-600 h-10 w-10  flex justify-center align-middle">
+            <i className="fa-solid fa-heart text-2xl lg:text-xl xl:text-2xl pt-1"></i>
           </div>
-         <div className="h-full border-r-2 hover:bg-orange-600 p-3  px-4 hover:text-white ">
-         <Link
-            to={"ViewJob"}
-            className="focus:outline-none"
-          >
-            VIEW JOB
-          </Link>
-         </div>
-         <div className="h-full p-3 flex justify-center align-middle w-[30px]">
-            <i className="fa-solid fa-heart text-2xl lg:text-xl xl:text-2xl "></i>
-         </div>
         </div>
       </div>
     </div>
