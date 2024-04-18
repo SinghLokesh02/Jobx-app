@@ -42,7 +42,7 @@ const JobsCard = (props) => {
         </Link>
 
         <Link
-          to={"ViewJob"}
+          to={"/ViewJob"}
           className="focus:outline-none hover:bg-orange-600 w-[40%] text-center md:pt-3 pt-3 hover:text-white md:p-4 p-1 border-r-2"
         >
           VIEW JOB

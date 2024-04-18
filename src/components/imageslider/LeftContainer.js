@@ -53,8 +53,8 @@ const list3 = [
 ]
 
 
- {/* Left Container */}
 function LeftContainer() {
+  
   return (
     <div className="left-container min-w-[200px] m-5 md:w-[30%] border-2 h-fit">
     <div className="filter flex justify-between border-b-2 px-5 p-4">

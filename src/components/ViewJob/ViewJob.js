@@ -119,7 +119,7 @@ const ViewJob = () => {
         </div>
       </div>
 
-      <div className="text">
+      <div className="text mt-1">
         <h1 className="m-2 text-3xl font-bold text-center">Similar Jobs</h1>
        <Morejobs />
       </div>

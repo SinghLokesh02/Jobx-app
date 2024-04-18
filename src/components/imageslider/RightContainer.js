@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Dropdown from "../Dropdown";
 import JobsCard from "../homePage/JobsCard";
-import JobCategoryCard from "../homePage/JobCategoryCard"
 
 const data = [
   {
