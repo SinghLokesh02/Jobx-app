@@ -1,82 +1,74 @@
-import * as React from 'react';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import React from 'react'
+import { Link } from 'react-router-dom';
+import Dropdown from "../Dropdown";
+const name1 = "Select Job Role"
+const Jobs = [
+  { value: "1", label: "React Js Developer" },
+  { value: "2", label: "UI/UX Designer" },
+  { value: "3", label: "Digital Marketing" },
+  { value: "4", label: "Web developer" },
+  { value: "5", label: "Node Js Developer" },
+  { value: "6", label: "Content Writer" },
+]
 
-export default function NavBelowComponents() {
-  const [age, setAge] = React.useState('');
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+const name2 = "Select Location";
+const Locations = [
+  { value: "1", label: "Indore" },
+  { value: "2", label: "Bhopal" },
+  { value: "3", label: "Mumbai" },
+  { value: "4", label: "Pune" },
+  { value: "5", label: "Delhi" },
+  { value: "6", label: "Bangalore" },
+  { value: "7", label: "Hyderabad" },
+  { value: "8", label: "Chennai" },
+  { value: "9", label: "Kolkata" },
+  { value: "10", label: "Ahmedabad" },
+  { value: "11", label: "Jaipur" },
+  { value: "12", label: "Surat" },
+  { value: "13", label: "Lucknow" },
+  { value: "14", label: "Kanpur" },
+  { value: "15", label: "Nagpur" },
+  { value: "16", label: "Visakhapatnam" },
+  { value: "17", label: "Thane" },
+  { value: "18", label: "Bhopal" },
+]
 
+const name3 = "Select Category";
+const Categories = [
+  { value: "1", label: "Web, Mobile &amp; Software Developer" },
+  { value: "2", label: "Data Science &amp; Analytics" },
+  { value: "3", label: "Admin Support" },
+  { value: "4", label: "Design &amp; Creative" },
+  { value: "5", label: "Digital Marketing" },
+  { value: "6", label: "IT &amp; Networking" },
+  { value: "7", label: "Sales &amp; Marketing" },
+  { value: "8", label: "Customer Service" },
+  { value: "9", label: "Accounting &amp; consulting" },
+  { value: "10", label: "Writing" },
+  { value: "11", label: "Legal" },
+  { value: "12", label: "Translation" },
+  { value: "13", label: "Engineering &amp; Architecture" },
+  { value: "14", label: "Content Writer" },
+]
+const NavBelowComponent = () => {
   return (
-    <div className='bg-orange-500'>
-      <FormControl sx={{ minWidth: 240 }} className='flex justify-center align-middle w-full'>
-        <div className='w-full md:w-auto md:p-3 flex flex-col gap-3 md:flex-row p-5'>
-          <div className='m-auto w-full md:w-80'>
-            <Select
-              value={age}
-              onChange={handleChange}
-              displayEmpty
-              inputProps={{ 'aria-label': 'Without label' }}
-              className='w-full bg-white h-10'
-            >
-              <MenuItem value="">
-                <em>Search Jobs</em>
-              </MenuItem>
-              <MenuItem value={"React Js Developer"}>React Js Developer</MenuItem>
-              <MenuItem value={"Python Developer"}>Python Developer</MenuItem>
-              <MenuItem value={"NodeJs Developer"}>NodeJs Developer</MenuItem>
-              <MenuItem value={"Content Writer"}>Content Writer</MenuItem>
-              <MenuItem value={"Process Manager"}>Process Manager</MenuItem>
-              <MenuItem value={"SEO Specialist"}>SEO Specialist</MenuItem>
-            </Select>
-          </div>
+    <div className='flex md:justify-around bg-orange-600 p-2 md:p-4 flex-col md:flex-row gap-5 m-auto justify-center align-middle'>
+      <div className='md:w-64 m-auto w-full flex justify-center md:pt-0 pt-2'>
+        <Dropdown name={name1} data={Jobs}/>
+      </div>
+      <div className='md:w-64 m-auto w-full flex justify-center'>
+        <Dropdown name={name2} data={Locations} />
+      </div>
+      <div className='md:w-64 m-auto w-full flex justify-center '>
+        <Dropdown name={name3} data={Categories} />
+      </div>
+      <Link to={"/Findjobs"} className='md:w-36 m-auto w-[80%] flex border-2 justify-center md:mb-0 mb-2 border-white px-2 py-1 hover:bg-white hover:text-orange-600'>
+        <button  className=''>SEARCH NOW</button>
+      </Link>
 
-          <div className='m-auto w-full md:w-80'>
-            <Select
-              value={age}
-              onChange={handleChange}
-              displayEmpty
-              inputProps={{ 'aria-label': 'Without label' }}
-              className='w-full bg-white h-10'
-            >
-              <MenuItem value="">
-                <em>Search Locations</em>
-              </MenuItem>
-              <MenuItem value={"Bhopal"}>Bhopal</MenuItem>
-              <MenuItem value={"Ratlam"}>Ratlam</MenuItem>
-              <MenuItem value={"Indore"}>Indore</MenuItem>
-              <MenuItem value={"Ujjain"}>Ujjain</MenuItem>
-              <MenuItem value={"Gwalior"}>Gwalior</MenuItem>
-            </Select>
-          </div>
-
-          <div className='m-auto w-full md:w-80'>
-            <Select
-              value={age}
-              onChange={handleChange}
-              displayEmpty
-              inputProps={{ 'aria-label': 'Without label' }}
-              className='w-full bg-white h-10'
-            >
-              <MenuItem value="">
-                <em>Search Category</em>
-              </MenuItem>
-              <MenuItem value={"Frontend Developer"}>Frontend Developer</MenuItem>
-              <MenuItem value={"Backend Developer"}>Backend Developer</MenuItem>
-              <MenuItem value={"Content Writer"}>Content Writer</MenuItem>
-              <MenuItem value={"Digital Marketing"}>Digital Marketing</MenuItem>
-              <MenuItem value={"Accounting"}>Accounting</MenuItem>
-              <MenuItem value={"Sales"}>Sales</MenuItem>
-              <MenuItem value={"UI/UX"}>UI/UX</MenuItem>
-              <MenuItem value={"Data Analyst"}>Data Analyst</MenuItem>
-            </Select>
-          </div>
-          {/* <input type="button" value={"Search Now"}  className='font-bold font-serif py-3 px-5 text-white hover:bg-orange-700 border-2'/> */}
-        </div>
-      </FormControl>
     </div>
-  );
+  )
 }
+
+export default NavBelowComponent
