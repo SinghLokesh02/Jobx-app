@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SliderBelowComponent = () => {
   return (
@@ -6,9 +7,14 @@ const SliderBelowComponent = () => {
       <h1 className="text-white text-left">100+ Registered Members</h1>
       <h1 className="text-white text-left">300 Jobs Found</h1>
       <h1 className="text-white text-left">632 Best Companies</h1>
-      <button className="bg-white text-black px-3 py-1 rounded border-2 hover:bg-black hover:text-white w-fit">
+      <Link 
+      to={{
+        pathname: "/PostJob",
+       
+      }}
+       className="bg-white text-black px-3 py-1 rounded border-2 hover:bg-black hover:text-white w-fit">
         POST A JOB
-      </button>
+      </Link>
     </div>
   )
 }

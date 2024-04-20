@@ -5,7 +5,7 @@ import Footer from "../homePage/Footer";
 
 
 const ApplyJob = () => {
- let isPassword = false;
+ let isPassword = true;
    
   return (
     <>
@@ -13,8 +13,8 @@ const ApplyJob = () => {
       <div>
         <div className="text bg-black text-white">
           <h1 className="p-5 text-center md:w-1/4  w-1/2">
-          <Link to="/" className="hover:bg-white hover:text-black p-2 rounded-md">Home</Link>
-         / Log In</h1>
+            <Link to="/" className="hover:bg-white hover:text-black p-2 rounded-md">Home</Link>
+            / Post a Job</h1>
         </div>
 
         {/* Form Containing Email Address Sign In Button */}

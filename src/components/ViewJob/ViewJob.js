@@ -10,7 +10,9 @@ const ViewJob = () => {
       <Navbar />
       <div>
         <div className="text bg-black text-white">
-          <h1 className="p-5 text-center md:w-1/4  w-1/2">Home / Jobname</h1>
+          <h1 className="p-5 text-center md:w-1/4  w-1/2">
+          <Link to="/" className="hover:bg-white hover:text-black p-2 rounded-md">Home</Link>
+            / Jobname</h1>
         </div>
       </div>
 

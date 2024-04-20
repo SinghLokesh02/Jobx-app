@@ -44,7 +44,7 @@ const Jobs = () => {
     ]
   };
   return (
-    <div className="w-full py-3 ">
+    <div className="w-full py-3">
       <div className='container1 m-auto  md:w-4/5'>
       <div className="heading flex justify-between md:m-5 p-2 md:4/5 mx-5">
         <div className="text sm:m-auto md:m-0 px-2">

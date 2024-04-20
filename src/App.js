@@ -10,6 +10,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ApplyJob from './components/jobsection/ApplyJob';
 import ViewJob from './components/ViewJob/ViewJob';
 import FindJobs from './components/imageslider/Findjobs';
+import PostJob from './components/homePage/PostJob';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/ApplyJob' element={<ApplyJob/>}/>
           <Route path='/ViewJob' element={<ViewJob/>}/>
           <Route path='/FindJobs' element={<FindJobs/>}/>
+          <Route path='/PostJob' element={<PostJob/>}/>
         </Routes>
       </Router>
     </div>

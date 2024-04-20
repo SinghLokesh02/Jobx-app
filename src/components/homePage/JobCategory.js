@@ -3,37 +3,34 @@ import JobCategoryCard from "./JobCategoryCard";
 
 // Arrays of 20 Job Categories
 const jobs = [
-  "Full stack Developer",
-  "Frontend Developer",
-  "Backend Developer",
-  "React Developer",
-  "Node Js Developer",
-  "MERN Stack Developer",
-  "MEAN Stack Developer",
-  "UI/UX Designer",
-  "Graphic Designer",
-  "Digital Marketing",
+  "Admin Suuport",
+  "React Js Developer",
   "Content Writer",
-  "SEO Specialist",
-  "Data Scientist",
+  "IT and Networking",
+  "Artificial Intelligence",
+  "Education Sector",
+  "IT and Software",
+  "Law",
+  "Legal",
+  "IT and Software",
+  "Project Coordinator",
+  "Python Developer",
+  "Web Developer",
+  "UI/UX Designer",
+  "Digital Marketing",
+  "Node Js Developer",
+  "Content Writer",
   "Data Analyst",
-  "Business Analyst",
-  "Product Manager",
-  "Project Manager",
-  "HR Manager",
-  "Sales Manager",
-  "Customer Support",
+  "Data Scientist",
+  "Machine Learning",
+   
 ];
 
-// Array for Number of Openings
-const jobcount = [
-  20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180,
-  190, 200, 210,
-];
+// Array for Number of Random Number of Jobs
+const jobcount = [12,23,34,54,23,12,23,34,54,23,12,23,34,54,23,12,23,34,54,23];
+ 
 
 // Remove 10 items from both arrays
-jobs.splice(0, 8);
-jobcount.splice(0, 8);
 
 const JobCategory = () => {
   return (

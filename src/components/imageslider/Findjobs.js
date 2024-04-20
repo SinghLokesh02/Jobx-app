@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../navBar/Navbar";
 import Footer from "../homePage/Footer";
 import LeftContainer from "./LeftContainer";
@@ -15,7 +16,8 @@ const Findjobs = () => {
         {/* Main Heading */}
         <div className="text bg-black text-white">
           <h1 className="p-5 text-center md:w-1/4  w-1/2">
-            Home / More Jobs/ Center Name
+          <Link to="/" className="hover:bg-white hover:text-black p-2 rounded-md">Home</Link>
+            / More Jobs/ Center Name
           </h1>
         </div>
 
