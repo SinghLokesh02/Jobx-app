@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BeforeFooter = () => {
   return (
@@ -20,12 +21,12 @@ const BeforeFooter = () => {
         </div>
 
         <div className="btns flex gap-5 md:p-0 px-5">
-          <button className="bg-orange-600 text-white font-medium hover:bg-orange-700 px-2 py-3 rounded-md">
+          <Link to={"PostJob"} className="bg-orange-600 text-white font-medium hover:bg-orange-700 px-2 py-3 rounded-md">
             POST A JOB
-          </button>
-          <button className="bg-black text-white font-medium hover:bg-gray-800 px-2 py-3 rounded-md">
+          </Link>
+          <Link to={"./PostJobsLearn"} className="bg-black text-white font-medium hover:bg-gray-800 px-2 py-3 rounded-md">
             LEARN MORE
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -46,12 +47,12 @@ const BeforeFooter = () => {
         </div>
 
         <div className="btns flex gap-5 md:p-0 px-5">
-          <button className="bg-orange-600 text-white font-medium hover:bg-orange-700 px-2 py-3 rounded-md">
-            POST A JOB
-          </button>
-          <button className="bg-black text-white font-medium hover:bg-gray-800 px-2 py-3 rounded-md">
+          <Link to={"/ApplyJob"} className="bg-orange-600 text-white font-medium hover:bg-orange-700 px-2 py-3 rounded-md">
+            GET LISTED
+          </Link>
+          <Link to={"./TalentedLearn"} className="bg-black text-white font-medium hover:bg-gray-800 px-2 py-3 rounded-md">
             LEARN MORE
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -11,7 +11,8 @@ import ApplyJob from './components/jobsection/ApplyJob';
 import ViewJob from './components/ViewJob/ViewJob';
 import FindJobs from './components/imageslider/Findjobs';
 import PostJob from './components/homePage/PostJob';
-
+import PostJobsLearn from './components/homePage/PostJobsLearn';
+import TalentedLearn from './components/homePage/TalentedLearn';
 function App() {
   return (
      <div className='App'>
@@ -27,6 +28,8 @@ function App() {
           <Route path='/ViewJob' element={<ViewJob/>}/>
           <Route path='/FindJobs' element={<FindJobs/>}/>
           <Route path='/PostJob' element={<PostJob/>}/>
+          <Route path='/PostJobsLearn' element={<PostJobsLearn/>}/>
+          <Route path='/TalentedLearn' element={<TalentedLearn/>}/>
         </Routes>
       </Router>
     </div>
