@@ -34,7 +34,7 @@ const jobcount = [12,23,34,54,23,12,23,34,54,23,12,23,34,54,23,12,23,34,54,23];
 
 const JobCategory = () => {
   return (
-    <div className="container w-full bg-gray-100 py-5">
+    <div className="container w-full bg-gray-100 py-5 m-auto">
       <div className="w-4/5 m-auto">
         <div className="heading m-5 text-center">
           <h1 className="text-3xl font-bold">Featured Jobs</h1>

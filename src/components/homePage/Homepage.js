@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import NavBelowComponents from "../navBar/NavBelowComponent";
 import ImageSlider from "../imageslider/ImageSlider";
 import SliderBelowComponent from "../imageslider/SliderBelowComponent";
+import BeforeFooter from "./BeforeFooter";
 
 const Homepage = () => {
   return (
@@ -22,6 +23,7 @@ const Homepage = () => {
       <Company />
       <JobCategory />
       <Offer />
+      <BeforeFooter />
       <Footer />     
     </div>
   );

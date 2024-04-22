@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { COMPANY_IMG } from '../../utils/constant';
-import ApplyJob from '../jobsection/ApplyJob';
+ 
 
 const CompanyCard = (props) => {
     const { name } = props;
